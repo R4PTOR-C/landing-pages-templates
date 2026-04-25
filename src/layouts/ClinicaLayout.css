@@ -177,3 +177,41 @@
 .cl-footer-links { display: flex; gap: 24px; list-style: none; }
 .cl-footer-links a { font-size: 0.82rem; color: #2a5060; transition: color 0.2s; }
 .cl-footer-links a:hover { color: var(--accent); }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .cl-nav-links { display: none; }
+  .cl-nav-inner { gap: 12px; }
+
+  .cl-hero { padding: 48px 0 40px; }
+  .cl-hero-inner { grid-template-columns: 1fr; gap: 36px; }
+
+  .cl-numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .cl-number-item { padding: 20px 16px; }
+  .cl-number-item:nth-child(2) { border-right: none; }
+  .cl-number-item:nth-child(1),
+  .cl-number-item:nth-child(2) { border-bottom: 1px solid var(--border); }
+
+  .cl-especialidades { padding: 56px 0; }
+  .cl-esp-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .cl-processo { padding: 56px 0; }
+  .cl-passos-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cl-passo { padding-right: 0; }
+  .cl-passo-arrow { display: none; }
+
+  .cl-equipe { padding: 56px 0; }
+  .cl-equipe-grid { grid-template-columns: 1fr; }
+
+  .cl-depoimentos { padding: 56px 0; }
+  .cl-depoimentos-grid { grid-template-columns: 1fr; }
+
+  .cl-agendar { padding: 56px 0; }
+
+  .cl-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .cl-esp-grid { grid-template-columns: 1fr; }
+  .cl-hero-title { font-size: 1.9rem; }
+}

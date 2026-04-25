@@ -180,3 +180,30 @@
 .ec-footer-links { display: flex; gap: 24px; list-style: none; }
 .ec-footer-links a { font-size: 0.82rem; color: #444; transition: color 0.2s; }
 .ec-footer-links a:hover { color: var(--accent); }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .ec-nav-links { display: none; }
+  .ec-nav-inner { gap: 12px; }
+
+  .ec-hero { padding: 48px 0 40px; }
+  .ec-hero-inner { grid-template-columns: 1fr; gap: 36px; }
+  .ec-hero-visual { grid-template-columns: repeat(2, 1fr); }
+  .ec-product-thumb:nth-child(1),
+  .ec-product-thumb:nth-child(4) { transform: none; }
+
+  .ec-products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+  .ec-promo-banner { flex-direction: column; padding: 36px 28px; gap: 16px; text-align: center; }
+  .ec-promo-num { font-size: 5rem; align-self: center; }
+
+  .ec-testimonials-grid { grid-template-columns: 1fr; }
+
+  .ec-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .ec-products-grid { grid-template-columns: 1fr; }
+  .ec-cart-btn span { display: none; }
+  .ec-hero-title { font-size: 2rem; }
+}

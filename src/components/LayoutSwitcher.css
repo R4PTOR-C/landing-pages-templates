@@ -60,3 +60,26 @@
   font-size: 1rem;
   line-height: 1;
 }
+
+@media (max-width: 768px) {
+  .ls-panel {
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: 16px;
+    transform: translateX(-50%);
+    flex-direction: row;
+    padding: 10px 12px;
+    border-radius: 100px;
+    gap: 4px;
+    max-width: calc(100vw - 32px);
+    overflow-x: auto;
+  }
+  .ls-heading { display: none; }
+  .ls-btn {
+    padding: 8px 12px;
+    font-size: 0.72rem;
+    gap: 5px;
+    white-space: nowrap;
+  }
+}
